@@ -26,14 +26,14 @@ const todo = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p className='mt-6'>
-          A "to-do list" is a powerful tool that offers numerous advantages for individuals seeking better organization and time management. It serves as a structured, visual representation of tasks and goals, providing a roadmap for daily or long-term activities.
+          A &apos;to-do list&apos; is a powerful tool that offers numerous advantages for individuals seeking better organization and time management. It serves as a structured, visual representation of tasks and goals, providing a roadmap for daily or long-term activities.
           </p>
           <a
             href='https://github.com/VladutPana/vp-todolist-repo'
             target='_blank'
             rel='noreferrer'
           > 
-            <button type="button" class="py-2 px-8 mr-8 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 shadow-[#5651e5] hover:scale-110 ease-in duration-300">Github</button>
+            <button type="button" className="py-2 px-8 mr-8 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 shadow-[#5651e5] hover:scale-110 ease-in duration-300">Github</button>
           </a>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>

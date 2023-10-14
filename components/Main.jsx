@@ -19,11 +19,11 @@ const Main = () => {
            Ploiești / Brașov, RO
           </motion.p>
           <h1 className='py-4 text-gray-700'>
-            Hello, i'm <span className='text-[#5651e5] italic'> Vlad</span>
+            Hello, i&apos;m <span className='text-[#5651e5] italic'> Vlad</span>
           </h1>
           <h1 className='py-2 text-gray-700'>Welcome to my portfolio !</h1>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
-            I’m focused on building responsive front-end web applications
+            I&apos;m focused on building responsive front-end web applications
             using various frameworks like React.js, Next.js with styling frameworks 
             such as tailwind CSS , animation frameworks such as framer-motion 
             and back-end technologies like MongoDB or Firebase.

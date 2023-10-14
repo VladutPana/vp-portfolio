@@ -38,11 +38,11 @@ const Contact = () => {
                 <h2 className='py-2'>Vlăduț Pană</h2>
                 <p>Junior Front-End Developer</p>
                 <p className='py-4'>
-                I am driven by my passion for creating user-friendly and visually appealing websites. I thrive on the opportunity to learn and explore new technologies, and I'm excited about the endless possibilities of web development. My goal is to secure a position where I can contribute to innovative web solutions and grow as a professional developer.
+                I am driven by my passion for creating user-friendly and visually appealing websites. I thrive on the opportunity to learn and explore new technologies, and I&apos;m excited about the endless possibilities of web development. My goal is to secure a position where I can contribute to innovative web solutions and grow as a professional developer.
                 </p>
               </div>
               <div>
-                <p className='pt-8'>Feel free to contact me for collaborations or opportunities in web development. Let's work together to bring digital ideas to life!</p>
+                <p className='pt-8'>Feel free to contact me for collaborations or opportunities in web development. Let&apos;s work together to bring digital ideas to life!</p>
                 <div className='flex items-center justify-between py-4'>
                   <a
                     href='https://www.linkedin.com/'

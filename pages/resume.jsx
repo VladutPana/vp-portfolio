@@ -101,7 +101,7 @@ My ability to develop strategies and streamline operations is something I am loo
               Practiced a lot of programming languages.
             </li>
             <li>
-              Got a liking to programming and it's branches.
+              Got a liking to programming and it&apos;s branches.
             </li>
           </ul>
         </div>
@@ -115,7 +115,7 @@ My ability to develop strategies and streamline operations is something I am loo
             </span>
             <span className='px-2'>|</span>Brașov, RO
           </p>
-          <p className='py-1 italic'>Bachelor's degree in Computer science and Electrical Engineering(2019 - 2023)</p>
+          <p className='py-1 italic'>Bachelor&apos;s degree in Computer science and Electrical Engineering(2019 - 2023)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
               Starting in 2019, experienced a lot of new opportunities.

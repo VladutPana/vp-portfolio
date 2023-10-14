@@ -28,16 +28,16 @@ const sociosphere = () => {
           <h2>Overview</h2>
           <p className='mt-6'>
             This appplication was built using the MERN stack. 
-            It was my university's license project. It features a social media clone using Mongo database and Redux for state control.
+            It was my university&apos;s license project. It features a social media clone using Mongo database and Redux for state control.
             This is my most worked on project, spending over months of time to get it done. A lot of external technologies used, like yup & formik for form and form control, jwebtoken for authentification purposes and many others like multer, react router, material UI, mongoose etc.
-            It has a dark mode, i took inspiration from Twitter's design, tried to recreate it as best as i could. It can be improved a lot by adding more logic and algorithms and adding new features.
+            It has a dark mode, i took inspiration from Twitter&apos;s design, tried to recreate it as best as i could. It can be improved a lot by adding more logic and algorithms and adding new features.
           </p>
           <a
             href='https://github.com/'
             target='_blank'
             rel='noreferrer'
           >
-             <button type="button" class="py-2 px-8 mr-8 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 shadow-[#5651e5] hover:scale-110 ease-in duration-300">Github</button>
+             <button type="button" className="py-2 px-8 mr-8 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 shadow-[#5651e5] hover:scale-110 ease-in duration-300">Github</button>
           </a>
 
         </div>

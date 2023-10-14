@@ -30,14 +30,14 @@ const everlands = () => {
             I built this application in React JS and Next JS 13.
             This app features unique design based on tailwind css and framer motion which is based on animations. 
             Currently is just a design and animation project, without a database and/or concise algorithms behind it.
-            It features a multiverse-like theme, named everlands which i took inspiration from the game no-man's-sky where planets and new galaxies could be explored.
+            It features a multiverse-like theme, named everlands which i took inspiration from the game no-man s-sky where planets and new galaxies could be explored.
           </p>
           <a
             href='https://github.com/'
             target='_blank'
             rel='noreferrer'
           >
-            <button type="button" class="py-2 px-8 mr-8 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 shadow-[#5651e5] hover:scale-110 ease-in duration-300">Github</button>
+            <button type="button" className="py-2 px-8 mr-8 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 shadow-[#5651e5] hover:scale-110 ease-in duration-300">Github</button>
           </a>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
