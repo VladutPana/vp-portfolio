@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import carouselIMG from '../public/assets/projects/carousel.png';
+import carouselIMG from '../public/assets/projects/Carousel.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 

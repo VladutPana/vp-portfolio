@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import sociosphereIMG from '../public/assets/projects/sociosphere.png';
+import sociosphereIMG from '../public/assets/projects/Sociosphere.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import everlandsIMG from '../public/assets/projects/everlands.png';
+import everlandsIMG from '../public/assets/projects/Everlands.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 

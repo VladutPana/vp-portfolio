@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import quotesIMG from '../public/assets/projects/quote.png';
+import quotesIMG from '../public/assets/projects/Quote.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 

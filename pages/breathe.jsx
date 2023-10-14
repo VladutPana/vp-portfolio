@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import breatheIMG from '../public/assets/projects/breathe.png';
+import breatheIMG from '../public/assets/projects/Breathe.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
