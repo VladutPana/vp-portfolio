@@ -1,2 +1,6 @@
-# vp-portfolio
- 
+
+```bash
+npm run dev
+# or
+yarn dev
+```
