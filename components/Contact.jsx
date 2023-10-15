@@ -16,8 +16,7 @@ const Contact = () => {
       <motion.div
       initial="hidden"
       whileInView="show"
-
-      variants={fadeIn('left','tween',0.2, 1)}
+      variants={fadeIn('right','tween',0.1,1)}
        className='max-w-[1240px] m-auto px-2 py-16 w-full'>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
           Contact

@@ -15,7 +15,7 @@ const About = () => {
         <motion.div 
          initial="hidden"
          whileInView="show"
-         variants={fadeIn('right', 'tween', 0.2, 1)}
+         variants={fadeIn('right','tween',0.1,1)}
          className='col-span-2'>
           <p className='uppercase text-xl tracking-widest text-[#5651e5]'>
             About
@@ -51,7 +51,7 @@ const About = () => {
         <motion.div
          initial="hidden"
          whileInView="show"
-         variants={fadeIn('left', 'tween', 0.5, 1)}
+         variants={fadeIn('right','tween',0.1,1)}
          className='w-full h-auto m-auto shadow-2xl shadow-[#5651e5] rounded-xl flex items-center justify-center p-4 hover:scale-105'>
           <Image src={meImg} className='rounded-xl' alt='/' />
         </motion.div>
