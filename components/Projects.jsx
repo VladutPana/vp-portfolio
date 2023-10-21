@@ -47,7 +47,7 @@ const Projects = () => {
 
           />
           <ProjectItem
-            title='Everlands'
+            title='Expandable cards'
             backgroundImg={everlands}
             projectUrl='/everlands'
             tech='React'

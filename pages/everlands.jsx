@@ -30,7 +30,7 @@ const everlands = () => {
           The Expandable Cards App is an interactive web application that showcases a collection of expandable cards built with React, Tailwind CSS, and Framer Motion. This application allows users to click on cards to expand or collapse them, revealing additional information about each card.
           </p>
           <a
-            href='https://github.com/VladutPana/vp-portfolio'
+            href='https://github.com/VladutPana/vp-expandable-cards'
             target='_blank'
             rel='noreferrer'
           >
