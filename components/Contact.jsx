@@ -44,7 +44,7 @@ const Contact = () => {
                 <p className='pt-8'>Feel free to contact me for collaborations or opportunities in web development. Let&apos;s work together to bring digital ideas to life!</p>
                 <div className='flex items-center justify-between py-4'>
                   <a
-                    href='https://www.linkedin.com/'
+                    href='https://www.linkedin.com/in/vlad-pan%C4%83/'
                     target='_blank'
                     rel='noreferrer'
                   >
@@ -65,7 +65,7 @@ const Contact = () => {
                   {/* <div className='rounded-full shadow-md shadow-[#8B008B] p-6 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-[#8B008B] ease-in duration-300'>
                     <AiOutlineMail />
                   </div> */}
-                  <Link href='/resume'>
+                  <Link legacyBehavior href='/resume'>
                     <a>
                       <div className='rounded-full shadow-md shadow-[#2E8B57] p-6 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-[#2E8B57] ease-in duration-300'>
                         <BsFillPersonLinesFill />
@@ -137,7 +137,7 @@ const Contact = () => {
           </div>
         </div>
         <div className='flex justify-center py-12'>
-          <Link href='/'>
+          <Link legacyBehavior href='/'>
             <a>
               <div className='rounded-full shadow-md shadow-[#5651e5] p-4 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
                 <HiOutlineArrowUp

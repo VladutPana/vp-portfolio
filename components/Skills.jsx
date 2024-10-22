@@ -39,7 +39,7 @@ const Skills = () => {
         variants={fadeIn('right','tween',0.1,1)}
          className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
 
-          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
+          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300 lg:cursor-pointer'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Html} width='64px' height='64px' alt='/' />
@@ -50,7 +50,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
+          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300 lg:cursor-pointer'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Css} width='64px' height='64px' alt='/' />
@@ -61,7 +61,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
+          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300 lg:cursor-pointer'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Javascript} width='64px' height='64px' alt='/' />
@@ -72,7 +72,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
+          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300 lg:cursor-pointer'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={ReactImg} width='64px' height='64px' alt='/' />
@@ -83,7 +83,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
+          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300 lg:cursor-pointer'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Tailwind} width='64px' height='64px' alt='/' />
@@ -94,7 +94,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
+          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300 lg:cursor-pointer'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Mongo} width='64px' height='64px' alt='/' />
@@ -105,7 +105,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
+          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300 lg:cursor-pointer'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Node} width='64px' height='64px' alt='/' />
@@ -116,7 +116,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
+          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300 lg:cursor-pointer'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Github} width='64px' height='64px' alt='/' />
@@ -127,7 +127,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
+          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300 lg:cursor-pointer'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={NextJS} width='64px' height='64px' alt='/' />
@@ -138,7 +138,7 @@ const Skills = () => {
             </div>
           </div>
           
-          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
+          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300 lg:cursor-pointer'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={framermotion} width='64px' height='64px' alt='/' />
@@ -149,7 +149,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
+          <div className='p-6 shadow-md shadow-[#5651e5] rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300 lg:cursor-pointer'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image src={Firebase} width='64px' height='64px' alt='/' />

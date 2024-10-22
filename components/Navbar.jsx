@@ -63,7 +63,7 @@ const Navbar = () => {
       whileInView="show"
       variants={fadeIn('right', 'tween' ,0.2, 1)}
       className='flex justify-around items-center w-full h-full px-2 2xl:px-16'>
-        {/* <Link href='/'>
+        {/* <Link legacyBehavior href='/'>
           <a>
             <Image
               src={NavLogo}
@@ -85,7 +85,7 @@ const Navbar = () => {
             <li className='ml-10 text-sm uppercase hover:text-blue-400 hover:font-bold hover:scale-150 ease-in duration-300'>
               <Link href='/#skills'>Skills</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:text-blue-400 hover:font-bold hover:font-bold hover:scale-150 ease-in duration-300'>
+            <li className='ml-10 text-sm uppercase hover:text-blue-400 hover:font-bold hover:scale-150 ease-in duration-300'>
               <Link href='/#projects'>Projects</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:text-blue-400 hover:font-bold hover:scale-150 ease-in duration-300'>
@@ -110,7 +110,7 @@ const Navbar = () => {
         </div>
         <div className='flex'>
       <a
-              href='https://www.linkedin.com/'
+              href='https://www.linkedin.com/in/vlad-pan%C4%83/'
               target='_blank'
               rel='noreferrer'
             >
@@ -157,7 +157,7 @@ const Navbar = () => {
         >
           <div>
             <div className='flex w-full items-center justify-between'>
-              <Link href='/'>
+              <Link legacyBehavior href='/'>
                 <a>
                   <Image
                     src={NavLogo}
@@ -219,7 +219,7 @@ const Navbar = () => {
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a
-                  href='https://www.linkedin.com/'
+                  href='https://www.linkedin.com/in/vlad-pan%C4%83/'
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -228,7 +228,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href='https://github.com/'
+                  href='https://github.com/VladutPana'
                   target='_blank'
                   rel='noreferrer'
                 >

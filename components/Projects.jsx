@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import ToDoList from '../public/assets/projects/ToDoList2.png';
 import breathe from '../public/assets/projects/Breathe.png';
-import everlands from '../public/assets/projects/Everlands.png';
+import expandableCards from '../public/assets/projects/ExpandableCards.png';
 import carousel from '../public/assets/projects/Carousel.png';
 import quotes from '../public/assets/projects/Quote.png';
 import ezential from '../public/assets/projects/ezential.png';
@@ -49,8 +49,8 @@ const Projects = () => {
           />
           <ProjectItem
             title='Expandable cards'
-            backgroundImg={everlands}
-            projectUrl='/everlands'
+            backgroundImg={expandableCards}
+            projectUrl='/expandableCardsApp'
             tech='React'
 
           />
