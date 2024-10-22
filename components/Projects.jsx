@@ -6,6 +6,7 @@ import breathe from '../public/assets/projects/Breathe.png';
 import everlands from '../public/assets/projects/Everlands.png';
 import carousel from '../public/assets/projects/Carousel.png';
 import quotes from '../public/assets/projects/Quote.png';
+import ezential from '../public/assets/projects/ezential.png';
 import sociosphere from '../public/assets/projects/Sociosphere.png';
 import ProjectItem from './ProjectItem';
 import { fadeIn } from '../utils/motion';
@@ -67,6 +68,14 @@ const Projects = () => {
             tech='REACT'
             
             />
+          <ProjectItem
+            title='Ezential app'
+            backgroundImg={ezential}
+            projectUrl='/ezential'
+            tech='REACT'
+            
+            />
+
           {/* <ProjectItem
             title='Sociosphere Social Media'
             backgroundImg={sociosphere}
