@@ -11,60 +11,25 @@ import { fadeIn, slideIn, zoomIn } from "../utils/motion";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('#1f2937');
-  const [position, setPosition] = useState('fixed')
-  const router = useRouter();
 
-  useEffect(() => {
-    if (
-      router.asPath === '/todo' ||
-      router.asPath === '/breathe' ||
-      router.asPath === '/everlands' ||
-      router.asPath === '/carousel' ||
-      router.asPath === '/quotes' ||
-      router.asPath === '/sociosphere'
-    ) {
-      setNavBg('transparent');
-      setLinkColor('#ecf0f3');
-    } else {
-      setNavBg('#ecf0f3');
-      setLinkColor('#1f2937');
-    }
-  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-  useEffect(() => {
-    const handleShadow = () => {
-      if (window.scrollY >= 90) {
-        setShadow(true);
-      } else {
-        setShadow(false);
-      }
-    };
-    window.addEventListener('scroll', handleShadow);
-  }, []);
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
-      className={
-        shadow
-          ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
-          : 'fixed w-full h-20 z-[100]'
-      }
+      style={{ backgroundColor: `#ecf0f3` }}
+      className={ 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'}
     >
       <motion.div 
       initial="hidden"
       whileInView="show"
       variants={fadeIn('right', 'tween' ,0.2, 1)}
-      className='flex justify-around items-center w-full h-full px-2 2xl:px-16'>
-        {/* <Link legacyBehavior href='/'>
-          <a>
+      className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+        <Link legacyBehavior href='/'>
+          <a className='hidden md:block md:w-[14rem]'>
             <Image
               src={NavLogo}
               alt='/'
@@ -73,9 +38,9 @@ const Navbar = () => {
               className='cursor-pointer hover:scale-110 ease-in duration-300'
             />
           </a>
-        </Link> */}
+        </Link>
         <div>
-          <motion.ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
+          <motion.ul style={{ color: `#1f2937` }} className='hidden md:flex'>
             <li className='ml-10 text-sm uppercase hover:text-blue-400 hover:font-bold hover:scale-150 ease-in duration-300'>
               <Link href='/'>Home</Link>
             </li>
@@ -101,7 +66,7 @@ const Navbar = () => {
           
           {/* Hamburger Icon */}
           <div
-            style={{ color: `${linkColor}` }}
+            style={{ color: `#1f2937` }}
             onClick={handleNav}
             className='md:hidden'
           >

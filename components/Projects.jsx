@@ -37,13 +37,13 @@ const Projects = () => {
           <ProjectItem
             title='To-Do List'
             backgroundImg={ToDoList}
-            projectUrl='/todo'
+            projectUrl='/todoApp'
             tech='Javascript'
           />
           <ProjectItem
             title='Breathing app'
             backgroundImg={breathe}
-            projectUrl='/breathe'
+            projectUrl='/breatheApp'
             tech='Javascript'
 
           />
@@ -57,21 +57,21 @@ const Projects = () => {
           <ProjectItem
             title='Image Carousel'
             backgroundImg={carousel}
-            projectUrl='/carousel'
+            projectUrl='/carouselApp'
             tech='REACT'
 
           />
           <ProjectItem
             title='Random Advices'
             backgroundImg={quotes}
-            projectUrl='/quotes'
+            projectUrl='/quotesApp'
             tech='REACT'
             
             />
           <ProjectItem
             title='Ezential app'
             backgroundImg={ezential}
-            projectUrl='/ezential'
+            projectUrl='/ezentialApp'
             tech='REACT'
             
             />

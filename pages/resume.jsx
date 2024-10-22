@@ -20,7 +20,7 @@ const resume = () => {
           <h2 className='text-center'>Vlad Pană</h2>
           <div className='flex'>
             <a
-              href='https://www.linkedin.com/'
+              href='https://www.linkedin.com/in/vlad-pan%C4%83/'
               target='_blank'
               rel='noreferrer'
             >
