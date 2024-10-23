@@ -17,7 +17,7 @@ import Framermotion from '../assets/skills/framermotion.png'
 import breathe from '../assets/projects/Breathe.png';
 import toDoList from '../assets/projects/ToDoList2.png';
 import expandableCards from '../assets/projects/ExpandableCards.png';
-import carousel from '../assets/projects/carousel.png';
+import carousel from '../assets/projects/Carousel.png';
 import quotes from '../assets/projects/Quote.png';
 import ezential from '../assets/projects/ezential.png';
 

@@ -9,15 +9,15 @@ import { ulText } from '../public/constants';
 
 const About = () => {
   return (
-    <motion.div
-    id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
-      <motion.div 
-      className='max-w-[77.5rem] m-auto md:grid grid-cols-3 gap-8'>
+    <motion.div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
+      <motion.div className='max-w-[77.5rem] m-auto md:grid grid-cols-3 gap-8'>
+
         <motion.div 
          initial="hidden"
          whileInView="show"
          variants={fadeIn('right','tween',0.1,1)}
          className='col-span-2'>
+
           <p className='uppercase text-xl tracking-widest text-[#5651e5]'>
             About
           </p>
@@ -42,6 +42,7 @@ const About = () => {
                   </p>
           </Link>
         </motion.div>
+
         <motion.div
          initial="hidden"
          whileInView="show"
@@ -49,6 +50,7 @@ const About = () => {
          className='w-full h-auto m-auto shadow-2xl shadow-[#5651e5] rounded-xl flex items-center justify-center p-4 hover:scale-105'>
           <Image src={meImg} className='rounded-xl' alt='/' />
         </motion.div>
+
       </motion.div>
     </motion.div>
   );
