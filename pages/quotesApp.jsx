@@ -16,13 +16,13 @@ const quotes = () => {
           src={quotesIMG}
           alt='/'
         />
-        <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
+        <div className='absolute top-[70%] max-w-[77.5rem] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
           <h2 className='py-2'>Random Advices</h2>
           <h3>React JS / Tailwind </h3>
         </div>
       </div>
 
-      <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8'>
+      <div className='max-w-[77.5rem] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8'>
         <div className='col-span-4'>
           <p>Project</p>
           <h2>Overview</h2>
@@ -57,7 +57,7 @@ const quotes = () => {
             </div>
           </div>
         </div>
-        <Link href='/#projects'>
+        <Link className='col-span-4 lg:text-2xl lg:my-10 lg:hover:scale-125 duration-300 text-center lg:max-w-[5rem]' href='/#projects'>
           <p className='underline cursor-pointer'>Back</p>
         </Link>
       </div>

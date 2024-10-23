@@ -1,13 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineArrowUp } from 'react-icons/hi';
 import ContactImg from '../public/assets/contact.jpg';
 import {motion} from 'framer-motion';
-import { fadeIn, slideIn, slider } from '../utils/motion';
+import { fadeIn } from '../utils/motion';
 
 
 const Contact = () => {
@@ -17,7 +15,7 @@ const Contact = () => {
       initial="hidden"
       whileInView="show"
       variants={fadeIn('right','tween',0.1,1)}
-       className='max-w-[1240px] m-auto px-2 py-16 w-full'>
+       className='max-w-[77.5rem] m-auto px-2 py-16 w-full'>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
           Contact
         </p>

@@ -1,22 +1,22 @@
 
-import { motion, animate} from "framer-motion";
+import { motion} from "framer-motion";
 import React from 'react';
 import { ParticleBackground } from '../utils/ParticleBackground';
-import { fadeIn, slideIn, zoomIn, staggerContainer } from "../utils/motion";
+import { zoomIn } from "../utils/motion";
 
 const Main = () => {
   return (
     <motion.div 
     id='home' className='w-full h-screen text-center'
     >
-      <motion.div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
+      <motion.div className='max-w-[77.5rem] w-full h-full mx-auto p-2 flex justify-center items-center'>
       <ParticleBackground/>
         <motion.div
         initial="hidden"
         whileInView="show"
         variants={zoomIn(0.2, 1)}>
           <motion.p className='uppercase text-sm tracking-widest text-gray-600'>
-           Ploiești / Brașov, RO
+           Ploiești / București, RO
           </motion.p>
           <h1 className='py-4 text-gray-700'>
             Hello, i&apos;m <span className='text-[#5651e5] italic'> Vlad</span>

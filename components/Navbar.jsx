@@ -1,22 +1,68 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { useRouter } from 'next/router';
 import NavLogo from '../public/assets/navLogo.png'
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, zoomIn } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
 
-  const handleNav = () => {
+const handleNav = () => {
     setNav(!nav);
   };
 
+const navItems = [
+    { id: 1, label: 'Home', href: '/' },
+    { id: 2, label: 'About', href: '/#about' },
+    { id: 3, label: 'Skills', href: '/#skills' },
+    { id: 4, label: 'Projects', href: '/#projects' },
+    { id: 5, label: 'Contact', href: '/#contact' },
+    { id: 6, label: 'Resume', href: '/resume' },
+];
+
+const socialLinks = [
+{
+  id:1,
+  href:'https://www.linkedin.com/in/vlad-pan%C4%83/',
+  target:"_blank",
+  rel:"noreferrer",
+  icon: <FaLinkedinIn /> ,
+  shadowColor:"#5651e5",
+  external: true,
+},
+ {
+  id:2,
+  href:'https://github.com/VladutPana',
+  target:"_blank",
+  rel:"noreferrer",
+  icon: <FaGithub /> ,
+  shadowColor:"#FFA500",
+  external: true,
+},
+{
+  id:3,
+  href:'/#contact',
+  target:"_blank",
+  rel:"noreferrer",
+  icon: <AiOutlineMail /> ,
+  shadowColor:"#8B008B",
+  external: false, // internal Next.js Link
+},
+{
+  id:4,
+  href:'/resume',
+  target:"_blank",
+  rel:"noreferrer",
+  icon: <BsFillPersonLinesFill /> ,
+  shadowColor:"#2E8B57",
+  external: false, // internal Next.js Link
+  },
+]
 
   return (
     <div
@@ -40,29 +86,14 @@ const Navbar = () => {
           </a>
         </Link>
         <div>
-          <motion.ul style={{ color: `#1f2937` }} className='hidden md:flex'>
-            <li className='ml-10 text-sm uppercase hover:text-blue-400 hover:font-bold hover:scale-150 ease-in duration-300'>
-              <Link href='/'>Home</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:text-blue-400 hover:font-bold hover:scale-150 ease-in duration-300'>
-              <Link href='/#about'>About</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:text-blue-400 hover:font-bold hover:scale-150 ease-in duration-300'>
-              <Link href='/#skills'>Skills</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:text-blue-400 hover:font-bold hover:scale-150 ease-in duration-300'>
-              <Link href='/#projects'>Projects</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:text-blue-400 hover:font-bold hover:scale-150 ease-in duration-300'>
-              <Link href='/#contact'>Contact</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:text-blue-400 hover:font-bold hover:scale-150 ease-in duration-300'>
-              <Link href='/resume'>Resume</Link>
-            </li>
-            
-          </motion.ul>
 
-          
+          <motion.ul style={{ color: `#1f2937` }} className='hidden md:flex'>
+            {navItems.map((item) => (
+              <li key={item.id} className='ml-10 text-sm uppercase hover:text-blue-400 hover:font-bold hover:scale-150 ease-in duration-300'>
+              <Link href={item.href}>{item.label}</Link>
+            </li>
+            ))}
+          </motion.ul>
           
           {/* Hamburger Icon */}
           <div
@@ -74,34 +105,36 @@ const Navbar = () => {
           </div>
         </div>
         <div className='flex'>
-      <a
-              href='https://www.linkedin.com/in/vlad-pan%C4%83/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <div className='ml-6 rounded-full shadow-md shadow-[#5651e5] p-2 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-[#5651e5]    ease-in duration-300'>
-                <FaLinkedinIn />
-              </div>
-            </a>
+
+        {socialLinks.map((link) => (
+          link.external ? (
             <a
-              href='https://github.com/VladutPana'
-              target='_blank'
-              rel='noreferrer'
+              key={link.id}
+              href={link.href}
+              target="_blank"
+              rel="noreferrer"
+              className="ml-6 rounded-full shadow-md p-2 cursor-pointer hover:scale-110 hover:shadow-lg ease-in duration-300"
+              style={{
+                boxShadow: `0 4px 6px ${link.shadowColor}`,
+                '--tw-shadow-color': link.shadowColor, // For hover shadow color
+              }}
             >
-              <div className='ml-6 rounded-full shadow-md shadow-[#FFA500]  p-2 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-[#FFA500]  ease-in duration-300'>
-                <FaGithub />
-              </div>
+              {link.icon}
             </a>
-            <Link href='/#contact'>
-              <div className='ml-6 rounded-full shadow-md shadow-[#8B008B] p-2 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-[#8B008B] ease-in duration-300'>
-                <AiOutlineMail />
+          ) : (
+            <Link key={link.id} href={link.href}>
+              <div
+                className="ml-6 rounded-full shadow-md p-2 cursor-pointer hover:scale-110 hover:shadow-lg ease-in duration-300"
+                style={{
+                  boxShadow: `0 4px 6px ${link.shadowColor}`,
+                  '--tw-shadow-color': link.shadowColor, // For hover shadow color
+                }}
+              >
+                {link.icon}
               </div>
             </Link>
-            <Link href='/resume'>
-              <div className='ml-6 rounded-full shadow-md shadow-[#2E8B57] p-2 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-[#2E8B57] ease-in duration-300'>
-                <BsFillPersonLinesFill />
-              </div>
-            </Link>
+        )
+      ))}
             </div>
       </motion.div>
 
@@ -146,78 +179,45 @@ const Navbar = () => {
             </div>
           </div>
           <div className='py-4 flex flex-col'>
+            
             <ul className='uppercase'>
-              <Link href='/'>
+              {navItems.map((item) => (
+                <Link key={item.id} href={item.href}>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Home
+                  {item.label}
                 </li>
               </Link>
-              <Link href='/#about'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  About
-                </li>
-              </Link>
-              <Link href='/#skills'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Skills
-                </li>
-              </Link>
-              <Link href='/#projects'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Projects
-                </li>
-              </Link>
-              <Link href='/resume'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Resume
-                </li>
-              </Link>
-              <Link href='/#contact'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Contact
-                </li>
-              </Link>
+              ))}
             </ul>
+
             <div className='pt-40'>
               <p className='uppercase tracking-widest text-[#5651e5]'>
                 Let&#39;s Connect
               </p>
-              <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <a
-                  href='https://www.linkedin.com/in/vlad-pan%C4%83/'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaLinkedinIn />
+                  <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+                    {socialLinks.map((item) => (
+                      item.external ? (
+                        <a
+                        href={item.href}
+                        target={item.target}
+                        rel={item.rel}
+                        >
+                      <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                        {item.icon}
+                      </div>
+                    </a>
+                      ) : (
+                    <Link href={item.href}>
+                      <div
+                        onClick={() => setNav(!nav)}
+                        className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                        >
+                        {item.icon}
+                      </div>
+                    </Link>
+                        )
+                      ))}
                   </div>
-                </a>
-                <a
-                  href='https://github.com/VladutPana'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaGithub />
-                  </div>
-                </a>
-                <Link href='/#contact'>
-                  <div
-                    onClick={() => setNav(!nav)}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                  >
-                    <AiOutlineMail />
-                  </div>
-                </Link>
-                <Link href='/resume'>
-                  <div
-                    onClick={() => setNav(!nav)}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                  >
-                    <BsFillPersonLinesFill />
-                  </div>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
