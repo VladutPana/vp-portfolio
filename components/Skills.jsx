@@ -45,7 +45,7 @@ const Skills = () => {
          initial="hidden"
          whileInView="show"
          variants={fadeIn('right','tween',0.1,1)}
-          className='py-4'>What technologies i'm familiar with
+          className='py-4'>What technologies i&apos;m familiar with
         </motion.h2>
 
         <motion.div 
