@@ -1,12 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import NavLogo from '../public/assets/navLogo.png'
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
+import { navItems, socialLinks } from '../public/constants';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -16,53 +15,6 @@ const handleNav = () => {
     setNav(!nav);
   };
 
-const navItems = [
-    { id: 1, label: 'Home', href: '/' },
-    { id: 2, label: 'About', href: '/#about' },
-    { id: 3, label: 'Skills', href: '/#skills' },
-    { id: 4, label: 'Projects', href: '/#projects' },
-    { id: 5, label: 'Contact', href: '/#contact' },
-    { id: 6, label: 'Resume', href: '/resume' },
-];
-
-const socialLinks = [
-{
-  id:1,
-  href:'https://www.linkedin.com/in/vlad-pan%C4%83/',
-  target:"_blank",
-  rel:"noreferrer",
-  icon: <FaLinkedinIn /> ,
-  shadowColor:"#5651e5",
-  external: true,
-},
- {
-  id:2,
-  href:'https://github.com/VladutPana',
-  target:"_blank",
-  rel:"noreferrer",
-  icon: <FaGithub /> ,
-  shadowColor:"#FFA500",
-  external: true,
-},
-{
-  id:3,
-  href:'/#contact',
-  target:"_blank",
-  rel:"noreferrer",
-  icon: <AiOutlineMail /> ,
-  shadowColor:"#8B008B",
-  external: false, // internal Next.js Link
-},
-{
-  id:4,
-  href:'/resume',
-  target:"_blank",
-  rel:"noreferrer",
-  icon: <BsFillPersonLinesFill /> ,
-  shadowColor:"#2E8B57",
-  external: false, // internal Next.js Link
-  },
-]
 
   return (
     <div

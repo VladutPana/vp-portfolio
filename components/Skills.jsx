@@ -1,33 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
-import Html from '../public/assets/skills/html.png';
-import Css from '../public/assets/skills/css.png';
-import Javascript from '../public/assets/skills/javascript.png';
-import ReactJS from '../public/assets/skills/react.png';
-import Tailwind from '../public/assets/skills/tailwind.png';
-import Github from '../public/assets/skills/github1.png';
-import Firebase from '../public/assets/skills/firebase.png';
-import NextJS from '../public/assets/skills/nextjs.png'
-import Mongo from '../public/assets/skills/mongo.png'
-import Node from '../public/assets/skills/node.png'
-import Framermotion from '../public/assets/skills/framermotion.png'
 import {motion} from 'framer-motion';
 import { fadeIn } from '../utils/motion';
+import { technologies } from '../public/constants';
 
-
-const technologies = [
-  { id: 1, name: 'HTML', imageSrc: Html },
-  { id: 2, name: 'CSS', imageSrc: Css },
-  { id: 3, name: 'Javascript', imageSrc: Javascript },
-  { id: 4, name: 'React', imageSrc: ReactJS },
-  { id: 5, name: 'Tailwind', imageSrc: Tailwind },
-  { id: 6, name: 'Mongo', imageSrc: Mongo },
-  { id: 7, name: 'Node', imageSrc: Node },
-  { id: 8, name: 'Github', imageSrc: Github },
-  { id: 9, name: 'Next', imageSrc: NextJS },
-  { id: 10, name: 'FramerMotion', imageSrc: Framermotion },
-  { id: 11, name: 'Firebase', imageSrc: Firebase },
-];
 
 const Skills = () => {
   return (

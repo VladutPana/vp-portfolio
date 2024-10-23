@@ -1,60 +1,10 @@
 
 import React from 'react';
-import ToDoList from '../public/assets/projects/ToDoList2.png';
-import breathe from '../public/assets/projects/Breathe.png';
-import expandableCards from '../public/assets/projects/ExpandableCards.png';
-import carousel from '../public/assets/projects/Carousel.png';
-import quotes from '../public/assets/projects/Quote.png';
-import ezential from '../public/assets/projects/ezential.png';
-import sociosphere from '../public/assets/projects/Sociosphere.png';
 import ProjectItem from './ProjectItem';
 import { fadeIn } from '../utils/motion';
 import {motion} from 'framer-motion';
+import { projects } from '../public/constants';
 
-const projects = [
-  {
-    id: 1,
-    title: 'To-Do List',
-    backgroundImg: ToDoList,
-    projectUrl: '/todoApp',
-    tech: 'Javascript',
-  },
-  {
-    id: 2,
-    title: 'Breathing app',
-    backgroundImg: breathe,
-    projectUrl: '/breatheApp',
-    tech: 'Javascript',
-  },
-  {
-    id: 3,
-    title: 'Expandable cards',
-    backgroundImg: expandableCards,
-    projectUrl: '/expandableCardsApp',
-    tech: 'React',
-  },
-  {
-    id: 4,
-    title: 'Image Carousel',
-    backgroundImg: carousel,
-    projectUrl: '/carouselApp',
-    tech: 'React',
-  },
-  {
-    id: 5,
-    title: 'Random Advices',
-    backgroundImg: quotes,
-    projectUrl: '/quotesApp',
-    tech: 'React',
-  },
-  {
-    id: 6,
-    title: 'Ezential app',
-    backgroundImg: ezential,
-    projectUrl: '/ezentialApp',
-    tech: 'React',
-  },
-];
 
 
 const Projects = () => {

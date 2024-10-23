@@ -5,13 +5,7 @@ import meImg from '../public/assets/about.jpg';
 import { HiOutlineArrowDown } from 'react-icons/hi';
 import { fadeIn } from '../utils/motion';
 import {motion} from 'framer-motion';
-
-const ulText = [
-  {id:1, text:"Junior Front-End Developer with a strong passion for web development."},
-  {id:2, text:"Engaged in diverse personal projects, which have honed my coding skills and knowledge."},
-  {id:3, text:"Familiar with the latest web technologies and frameworks, and eager to stay up-to-date with emerging trends."},
-  {id:4, text:" Although I lack professional experience, I am highly motivated and quick to adapt to new challenges."}
-]
+import { ulText } from '../public/constants';
 
 const About = () => {
   return (
