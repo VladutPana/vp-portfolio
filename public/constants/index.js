@@ -146,6 +146,45 @@ export const projects = [
     },
   ];
 
+export const contact =[
+{
+  name:"Vlăduț Pană",
+  occupation:"Junior Front-End Developer",
+  text:" I am driven by my passion for creating user-friendly and visually appealing websites. I thrive on the opportunity to learn and explore new technologies, and I'm excited about the endless possibilities of web development. My goal is to secure a position where I can contribute to innovative web solutions and grow as a professional developer.",
+  text2:"Feel free to contact me for collaborations or opportunities in web development. Let's work together to bring digital ideas to life!"
+}
+];
+
+export const contactSocialLinks = [
+    {
+      id:1,
+      href:'https://www.linkedin.com/in/vlad-pan%C4%83/',
+      target:"_blank",
+      rel:"noreferrer",
+      icon: <FaLinkedinIn size={20} /> ,
+      shadowColor:"#5651e5",
+      external: true,
+    },
+     {
+      id:2,
+      href:'https://github.com/VladutPana',
+      target:"_blank",
+      rel:"noreferrer",
+      icon: <FaGithub size={20}/> ,
+      shadowColor:"#FFA500",
+      external: true,
+    },
+    {
+      id:3,
+      href:'/resume',
+      target:"_blank",
+      rel:"noreferrer",
+      icon: <BsFillPersonLinesFill size={20}/> ,
+      shadowColor:"#2E8B57",
+      external: false, // internal Next.js Link
+      },
+];
+
 export const resumeText = [
     "As a highly motivated individual eager to embark on a dynamic career in web development, I possess a unique blend of analytical, innovative, and strategic thinking. I am excited to leverage these skills to contribute to the success of a fast-paced and challenging work environment.My passion for web development drives me to excel in this field and become a valuable asset to any team. While I may not have direct work experience yet, I am committed to embracing leadership roles and enhancing organizational effectiveness from the very start of my career.My ability to develop strategies and streamline operations is something I am looking forward to applying in a real-world setting. I believe in the power of diverse analytical skills, collaborative teamwork, and the importance of building strong relationships with colleagues and clients. As I am just beginning my professional journey, I am committed to honing my interpersonal abilities and complex problem-solving skills to thrive in this industry."
 ];
