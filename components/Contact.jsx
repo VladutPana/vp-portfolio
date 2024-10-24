@@ -9,13 +9,13 @@ import { contact, contactSocialLinks } from '../public/constants';
 
 const Contact = () => {
   return (
-    <div id='contact' className='w-full lg:h-screen'>
+    <div id='contact' className='w-full lg:h-full'>
       <motion.div initial="hidden" whileInView="show"  variants={fadeIn('right','tween',0.1,1)} className='max-w-[77.5rem] m-auto px-2 py-16 w-full'>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'> Contact</p>
         <h2 className='py-4'>Get In Touch</h2>
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* left */}
-          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
+          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-md shadow-[#5651e5] rounded-xl p-4'>
             <div className='lg:p-4 h-full '>
               <div>
                 <Image className='rounded-xl hover:scale-105 ease-in duration-300'  src={ContactImg} alt='/'/>
@@ -63,7 +63,7 @@ const Contact = () => {
           </div>
 
           {/* right */}
-          <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
+          <div className='col-span-3 w-full h-auto shadow-md shadow-[#5651e5] rounded-xl lg:p-4'>
             <div className='p-4'>
 
             <form action="https://submit-form.com/oyeMtM993" method="POST">
@@ -119,7 +119,7 @@ const Contact = () => {
                     name='message'
                   ></textarea>
                 </div>
-                <button className='w-full p-4 text-gray-100 mt-4 lg:hover:scale-105 ease-in duration-300'>
+                <button className='w-full p-4 shadow-md shadow-[#5651e5] mt-4 lg:hover:scale-105 ease-in duration-300'>
                   Send Message
                 </button>
               </form>
@@ -129,7 +129,7 @@ const Contact = () => {
         {/* arrow button */}
         <div className='flex justify-center py-12'>
           <Link legacyBehavior href='/'>
-              <div className='rounded-full shadow-md shadow-[#5651e5] p-4 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-[#5651e5] ease-in duration-300'>
+              <div className='rounded-full shadow-md shadow-[#5651e5] p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <HiOutlineArrowUp className='text-[#5651e5]' size={30}/>
               </div>
           </Link>

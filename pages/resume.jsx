@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { resumeText, resumeSkills, resumeHighschool, resumeCollege, resumeExperience } from '../public/constants';
 
-const resume = () => {
+const resume = ({darkMode}) => {
   return (
     <>
       <Head>
@@ -15,7 +15,7 @@ const resume = () => {
       <div className='max-w-[59rem] mx-auto p-2 pt-[7.5rem]'>
         <h2 className='text-center'>Resume</h2>
         {/* gray label */}
-        <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center'>
+        <div className={`${darkMode ? "bg-[#0f172a]" : "bg-[#d0d4d6]"} my-4 p-4 w-full flex justify-between items-center`}>
           <h2 className='text-center'>Vlad Pană</h2>
           <div className='flex'>
             <a

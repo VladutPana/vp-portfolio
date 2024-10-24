@@ -97,7 +97,7 @@ export const technologies = [
     { id: 7, name: 'Node', imageSrc: Node },
     { id: 8, name: 'Github', imageSrc: Github },
     { id: 9, name: 'Next', imageSrc: NextJS },
-    { id: 10, name: 'FramerMotion', imageSrc: Framermotion },
+    { id: 10, name: 'Framer Motion', imageSrc: Framermotion },
     { id: 11, name: 'Firebase', imageSrc: Firebase },
 ];
 

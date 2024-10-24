@@ -18,10 +18,10 @@ const Main = () => {
         variants={zoomIn(0.2, 1)}>
           {mainText.map((item) =>(
           <>
-          <motion.p className='uppercase text-sm tracking-widest text-gray-600'>{item.location}</motion.p>
-          <h1 className='py-4 text-gray-700'> {item.introduction}<span className='text-[#5651e5] italic px-2'>{item.name}</span></h1>
-          <h1 className='py-2 text-gray-700'>{item.welcome}</h1>
-          <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'> {item.aboutMe}</p>
+          <motion.p className='uppercase text-sm tracking-widest'>{item.location}</motion.p>
+          <h1 className='py-4  '> {item.introduction}<span className='text-[#5651e5] italic px-2'>{item.name}</span></h1>
+          <h1 className='py-2 '>{item.welcome}</h1>
+          <p className='py-4 sm:max-w-[70%] m-auto'> {item.aboutMe}</p>
           </>
           ))}
         </motion.div>
