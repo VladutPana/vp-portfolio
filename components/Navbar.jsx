@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FiMoon } from "react-icons/fi";
 import { WiDaySunny } from "react-icons/wi";
-import NavLogo from '../public/assets/navLogo.png'
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import { navItems, socialLinks } from '../public/constants';
